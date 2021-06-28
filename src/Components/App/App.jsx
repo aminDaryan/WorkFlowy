@@ -81,19 +81,17 @@ function App() {
                 space={item.space}
                 id={item.id}
               >
-                <S.Title>
-                  <S.Input
-                    defaultValue={item.title}
-                    onChange={e => handleEditText(e, item.id)}
-                    type="text"
-                    autoFocus
-                  />
-                  {VerticalLines?.length > 0 && VerticalLines.map(space => {
-                    return (
-                      <S.VerticalLine key={space} space={space}></S.VerticalLine>
-                    );
-                  })}
-                </S.Title>
+                <S.Input
+                  defaultValue={item.title}
+                  onChange={e => handleEditText(e, item.id)}
+                  type="text"
+                  autoFocus
+                />
+                {VerticalLines?.length > 0 && VerticalLines.map(space => {
+                  return (
+                    <S.VerticalLine key={space} space={space}></S.VerticalLine>
+                  );
+                })}
               </S.ListItem>
             );
           })}

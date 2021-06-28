@@ -15,12 +15,6 @@ export const ListItem = styled.li`
   position: relative;
   margin: 0.6rem;
   margin-left:${props => props.space > 0 ? `${props.space * 2}rem` : '0'};  
-`;
-
-
-
-export const Title = styled.div`
-  height: 1.5rem;
   font-size: 1.1rem;
 `;
 
@@ -38,7 +32,6 @@ export const VerticalLine = styled.div`
 `;
 
 export const Input = styled.input`
-  height: 1.5rem;
   padding: 0;
   outline: none;
   border: none;
